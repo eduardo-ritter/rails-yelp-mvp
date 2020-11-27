@@ -1,0 +1,8 @@
+<h1>INDEX</h1>
+<br>
+<h2>all restaurants</h2>
+<br>
+<% @restaurants.each do |restaurant| %>
+  <hr>
+  <p><%= link_to restaurant.name, restaurant_path(restaurant), class: "btn btn-primary"%></p>
+<% end %>
